@@ -42,7 +42,9 @@ function Login() {
           }
         }}>
             <label>ENTER YOUR PILEARNING PASSWORD</label>
-            <input type="password" className="login_center-input" value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
+            
+            <input type="text" id="username" name="username" style={{display: 'none'}}/>
+            <input type="password" className="login_center-input" value={password} onChange={(e)=>{setPassword(e.target.value)}} required autoComplete="new-password"/>
             <button type="submit" className="login_center-buttion" >Enter Lab</button>
             </form>
         </div>

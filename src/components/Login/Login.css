@@ -85,7 +85,7 @@
     align-items: center;
     justify-content: center;
     /* background-color: #22464e; */
-    background-image: url('C:\web dev\zicops\src\components\Login\lockbg.jpg');
+    background-image: url('./lockbg.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 172% 120%;
