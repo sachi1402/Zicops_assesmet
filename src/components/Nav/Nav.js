@@ -12,7 +12,7 @@ function Nav() {
         <div>Exams</div>
         <div>Community</div>
         </div>
-        <div class="nav_icons">
+        <div className="nav_icons">
 
         </div>
         <div className='nav_user'>
