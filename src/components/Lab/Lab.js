@@ -13,7 +13,7 @@ function Lab({Timerem,setTimerem,close}) {
       }
     }, 1000);
     return () => clearInterval(interval);
-  }, [remainingTime]);
+  }, [remainingTime,exithandler]);
 
   const minutes = Math.floor(remainingTime / 60);
   const seconds = remainingTime % 60;
