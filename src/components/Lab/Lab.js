@@ -8,6 +8,9 @@ function Lab({Timerem,setTimerem,close}) {
       if (remainingTime > 0) {
         setRemainingTime(remainingTime - 1);
       }
+      else{
+        exithandler()
+      }
     }, 1000);
     return () => clearInterval(interval);
   }, [remainingTime]);
