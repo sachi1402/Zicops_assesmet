@@ -1,0 +1,173 @@
+.login_page{
+    /* height: 90vh; */
+    background-color: #112428;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* position: relative; */
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+    width: 100%;
+    flex-grow: 1;
+    position: relative;
+}
+.door {
+    position: absolute; 
+    top: 0;
+    flex-grow: 1; 
+    width: 50%;
+    
+    height: 100%; 
+    background-color: #112428; 
+    transition: transform 1s; 
+    display: flex;
+    
+    
+  }
+  .door_border{
+    /* height: 100%; */
+    /* width: 100%; */
+    flex-grow: 1;
+    border: 10px solid cyan;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .door-left {
+    left: 0; 
+    z-index: 1;
+    
+  }
+  
+  .door-right {
+    right: 0; 
+    z-index: 1;
+  }
+  
+  .door.openr {
+    transform: translateX(150%); 
+  }
+  .door.openl{
+    transform: translateX(-150%);
+  }
+
+  .tinerem-cont{
+    height: 50%;
+    width: 60px;
+    border:5px solid #427278;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    margin-left: 55%;
+    margin-top: 20%;
+        
+  }
+  .timerem{
+    background-color:cyan;
+    width: 60px;
+    display: flex;
+    align-self: flex-end;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin-left: 50%; */
+  }
+  .tinerem-text{
+    justify-self: center;
+    margin-left:18%;
+    font-size: 50px;
+    color: cyan;
+    font-weight: bold;  
+  }
+.login_center{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #22464e; */
+    background-image: url('C:\web dev\zicops\src\components\Login\lockbg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 172% 120%;
+    height: 500px;
+    border-radius: 50%;
+    /* margin-top:10px; */
+    border: 5px solid #DFFFFF;
+    box-shadow: 0 0 15px 15px #427278;
+    position: absolute;
+    z-index: 3;
+    position: absolute; /* Position the dice at the center of the container */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+ }
+ .login_center::before {
+     content: '';
+     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); 
+     position: absolute; 
+     top: 0%;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     z-index: -1; 
+     height: 500px;
+     width: 500px;
+     border-radius: 50%;
+    }  
+.hidden{
+    position: absolute; 
+     top: 20%;
+     left: 38%;
+     /* height: 500px; */
+    transform-origin: center;
+    animation: rotate-fade forwards 0.5s linear infinite;
+    animation-iteration-count: 1;
+    /* display: none; */
+}
+  .IoFingerPrintSharp{
+    width: 150px;
+    height: 150px;
+    color: cyan;
+    margin-top:-10px ;
+    position: relative;
+    top: -60px;
+  }
+  label{
+    position: relative;
+    top: -50px;
+    color: floralwhite  ;
+  }
+  .login_center-input{
+    border:2px solid rgb(57, 255, 255);
+    width: 350px;
+    height: 50px;
+    background-color:transparent;
+    color: rgb(57, 255, 255);
+    font-size:50px;
+    position: relative;
+    top: -30px;
+  }
+  .login_center-buttion{
+    border:2px solid rgb(57, 255, 255);
+    width: 150px;
+    height: 50px;
+    background-color:rgb(57, 255, 255);
+    z-index: 5;
+  }
+  
+  @keyframes rotate-fade {
+    0% {
+      transform: rotate(0deg) scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: rotate(360deg) scale(1);
+      opacity: 0.5;
+    }
+    100% {
+      transform: rotate(720deg) scale(1);
+      opacity: 0;
+      
+    }
+  }

@@ -1,0 +1,24 @@
+.Lab{
+    
+    
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* height: 100%; */
+    /* padding-top:10%; */
+}
+.Lab_cont h1{
+    /* margin-top:10%; */
+    /* padding-top: 10%; */
+    color: cyan;
+}
+.Lab-exit{
+    color: cyan;
+    /* margin-top:1%; */
+    font-size:50px;
+    padding: 5px;
+    width: 10%;
+    background-color:transparent;
+    border: 5px solid cyan;
+    
+}
