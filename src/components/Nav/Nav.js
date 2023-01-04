@@ -16,7 +16,7 @@ function Nav() {
 
         </div>
         <div className='nav_user'>
-            <img src=''/>
+            {/* <img src=''/> */}
             <div className='nav_user-name'>
                 <h4>Name Example</h4>
                 <p>designation</p>
