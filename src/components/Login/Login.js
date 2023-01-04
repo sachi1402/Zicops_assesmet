@@ -35,7 +35,12 @@ function Login() {
         <form onSubmit={e => {
           e.preventDefault();
           if (password === 'pass') {
+            if(Timerem!==0){
             setOpen(true);
+            }
+            else {
+              alert('time up ')
+            }
             console.log('d22')
           } else {
             alert('Please enter correct password')
