@@ -9,11 +9,12 @@ function Lab({Timerem,setTimerem,close}) {
         setRemainingTime(remainingTime - 1);
       }
       else{
-        exithandler()
+        setRemainingTime(0)
+        close(false)
       }
     }, 1000);
     return () => clearInterval(interval);
-  }, [remainingTime,exithandler]);
+  }, [remainingTime,close]);
 
   const minutes = Math.floor(remainingTime / 60);
   const seconds = remainingTime % 60;
