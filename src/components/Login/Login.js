@@ -38,6 +38,7 @@ function Login() {
             setOpen(true);
             console.log('d22')
           } else {
+            alert('Please enter correct password')
             console.log('ds')
           }
         }}>
